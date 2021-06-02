@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<script src="js/jquery_1.11.3.js"></script>
+<script src="js/data.js"  type="text/javascript"></script>
+<script src="js/index.js"  type="text/javascript"></script>
+<head>
+  <title>乡音</title>
+  <link rel="stylesheet" href="css/index.css" >
+</head>
+<body">
+<div class="bg" ></div>
+<div id="fake_body">
+<!-- <p id="word_0"class="words"  style="left:10%;top:10%" >第一个</p>
+<p id="word_1"class="words"  style="left:10%;top:10%" >玉米棒</p>
+<p id="word_2" class="words normal-text" style="left:10%;top:20%" >蚯蚓</p>
+<p id="word_3" class="words normal-text" style="left:10%;top:30%" >不行</p>
+<p id="word_4" class="words small-text" style="left:10%;top:40%" >泥块儿</p>
+<p id="word_5" class="words normal-text vertical-text" style="left:10%;top:50%" >毛巾</p>
+<p id="word_6" class="words " style="left:10%;top:60%" >一百元</p>
+<p id="word_7" class="words normal-text vertical-text" style="left:10%;top:70%" >拖拉机</p>
+<p id="word_8" class="words normal-text" style="left:10%;top:80%" >毛毛虫</p>
+<p id="word_9" class="words small-text" style="left:10%;top:90%" >硬币</p>
+<p id="word_10" class="words big-text vertical-text" style="left:20%;top:0%" >钞票</p>
+<p id="word_11" class="words " style="left:20%;top:10%" >麻雀</p>
+<p id="word_12" class="words small-text" style="left:20%;top:20%" >脚跟</p>
+<p id="word_13" class="words big-text" style="left:20%;top:30%" >夹菜</p>
+<p id="word_14" class="words big-text" style="left:20%;top:40%" >妖怪</p>
+<p id="word_15" class="words vertical-text" style="left:20%;top:50%" >脖子</p>
+<p id="word_16" class="words " style="left:20%;top:60%" >没空</p>
+<p id="word_17" class="words small-text" style="left:20%;top:70%" >脸蛋</p>
+<p id="word_18" class="words big-text vertical-text" style="left:20%;top:80%" >玉米</p>
+<p id="word_19" class="words small-text vertical-text" style="left:20%;top:90%" >鸡蛋饼</p>
+<p id="word_20" class="words vertical-text" style="left:30%;top:10%" >惊讶</p>
+<p id="word_21" class="words " style="left:30%;top:20%" >游泳</p>
+<p id="word_22" class="words small-text" style="left:30%;top:30%" >手腕</p>
+<p id="word_23" class="words big-text" style="left:30%;top:40%" >得罪人</p>
+<p id="word_24" class="words big-text" style="left:30%;top:50%" >捉迷藏</p>
+<p id="word_25" class="words" style="left:30%;top:60%" >抹布</p>
+<p id="word_26" class="words vertical-text" style="left:30%;top:70%" >砖头</p>
+<p id="word_27" class="words small-text" style="left:30%;top:80%" >自行车</p>
+<p id="word_28" class="words small-text" style="left:30%;top:90%" >月亮</p>
+<p id="word_29" class="words big-text vertical-text" style="left:40%;top:10%" >小蝌蚪</p>
+<p id="word_30" class="words vertical-text" style="left:40%;top:20%" >下田</p>
+<p id="word_31" class="words " style="left:40%;top:30%" >京剧</p>
+<p id="word_32" class="words small-text" style="left:40%;top:40%" >倒酒</p>
+<p id="word_33" class="words big-text" style="left:40%;top:50%" >手绢</p>
+<p id="word_34" class="words big-text" style="left:40%;top:60%" >蝉</p>
+<p id="word_35" class="words" style="left:40%;top:70%" >胡扯</p>
+<p id="word_36" class="words vertical-text" style="left:40%;top:80%" >讨厌</p>
+<p id="word_37" class="words small-text vertical-text" style="left:40%;top:90%" >失败</p>
+<p id="word_38" class="words big-text" style="left:50%;top:10%" >拖鞋</p>
+<p id="word_39" class="words big-text vertical-text" style="left:50%;top:20%" >墙角</p>
+<p id="word_40" class="words" style="left:50%;top:30%" >板凳</p>
+<p id="word_41" class="words " style="left:50%;top:40%" >凳子</p>
+<p id="word_42" class="words small-text" style="left:50%;top:50%" >铁锹</p>
+<p id="word_43" class="words big-text" style="left:50%;top:60%" >聪明</p>
+<p id="word_44" class="words big-text" style="left:50%;top:70%" >捣蛋虫</p>
+<p id="word_45" class="words vertical-text" style="left:50%;top:80%" >山芋</p>
+<p id="word_46" class="words small-text" style="left:50%;top:90%" >爸爸</p>
+<p id="word_47" class="words small-text vertical-text" style="left:60%;top:10%" >肥皂</p>
+<p id="word_48" class="words big-text vertical-text" style="left:60%;top:20%" >指甲</p>
+<p id="word_49" class="words big-text" style="left:60%;top:30%" >小腿</p>
+<p id="word_50" class="words vertical-text" style="left:60%;top:40%" >拳头</p>
+<p id="word_51" class="words" style="left:60%;top:50%" >老太太</p>
+<p id="word_52" class="words" style="left:60%;top:60%" >挠痒</p>
+<p id="word_53" class="words" style="left:60%;top:70%" >葵花籽</p>
+<p id="word_54" class="words" style="left:60%;top:80%" >自行车</p>
+<p id="word_55" class="words small-text vertical-text" style="left:60%;top:90%" >调皮</p>
+<p id="word_56" class="words" style="left:70%;top:10%" >说假话</p>
+<p id="word_57" class="words" style="left:70%;top:20%" >很热</p>
+<p id="word_58" class="words" style="left:70%;top:30%" >潜水</p>
+<p id="word_59" class="words" style="left:70%;top:40%" >乌鸦</p>
+<p id="word_60" class="words" style="left:70%;top:50%" >天刚亮</p>
+<p id="word_61" class="words vertical-text" style="left:70%;top:60%" >口袋</p>
+<p id="word_62" class="words vertical-text" style="left:70%;top:70%" >尖叫</p>
+<p id="word_63" class="words" style="left:70%;top:80%" >知了</p>
+<p id="word_64" class="words small-text" style="left:70%;top:90%" >行</p>
+<p id="word_65" class="words vertical-text" style="left:80%;top:10%" >说瞎话</p>
+<p id="word_66" class="words" style="left:80%;top:20%" >反常</p>
+<p id="word_67" class="words vertical-text" style="left:80%;top:30%" >丢人</p>
+<p id="word_68" class="words" style="left:80%;top:40%" >担责任</p>
+<p id="word_69" class="words" style="left:80%;top:50%" >瓜子</p>
+<p id="word_70" class="words vertical-text" style="left:80%;top:60%" >吃饭</p>
+<p id="word_71" class="words vertical-text" style="left:80%;top:70%" >恶人</p>
+<p id="word_72" class="words" style="left:80%;top:80%" >看热闹</p>
+<p id="word_73" class="words small-text vertical-text" style="left:80%;top:90%" >厨房</p>
+<p id="word_74" class="words" style="left:90%;top:10%" >太阳</p>
+<p id="word_75" class="words vertical-text" style="left:90%;top:20%" >坏了</p>
+<p id="word_76" class="words vertical-text" style="left:90%;top:30%" >吝啬</p>
+<p id="word_77" class="words" style="left:90%;top:40%" >内裤</p>
+<p id="word_78" class="words" style="left:90%;top:50%" >油条</p>
+<p id="word_79" class="words" style="left:90%;top:60%" >到哪儿</p>
+<p id="word_80" class="words" style="left:90%;top:70%" >真行</p>
+<p id="word_81" class="words" style="left:90%;top:80%" >将来</p>
+<p id="word_82" class="words vertical-text" style="left:90%;top:30%" >吝啬</p>
+<p id="word_83" class="words" style="left:90%;top:40%" >内裤</p>
+<p id="word_84" class="words" style="left:90%;top:50%" >油条</p> -->
+
+<audio id="player" hidden="true" >
+  <source src="audio/male/44.mp3" type="audio/mp3">
+</audio>
+</div>
+</body>
+</html>
