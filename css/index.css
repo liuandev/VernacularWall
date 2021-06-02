@@ -39,7 +39,7 @@ html,body{
     font-family:'sqFont';
     color:rgb(170, 157, 10);
     position: absolute;
-    font-size: 45px;
+    font-size: large;
     left:45%;top:45%;
     z-index: 999;
 }

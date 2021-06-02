@@ -37,9 +37,9 @@ function getPosition(pi) {
     deg = (pi-50)*360/35;
     
   }
-  var dis1 = Math.PI/180; //1度的计算参数
-  position.y = center.y -   Math.cos(dis1 * deg)*r;
-  position.x = center.x +   Math.sin(dis1 * deg)*r;
+  var dis1 = Math.PI/180; //1度的计算参数
+  position.y = center.y - Math.cos(dis1 * deg)*r;
+  position.x = center.x + Math.sin(dis1 * deg)*r;
  
   console.log(deg+","+position.x+","+position.y);
 
@@ -63,23 +63,18 @@ $(function(){
     console.log(wordsArr[i].name);
     var pp = getPosition(i);
 
-    if(wordsArr[i].x == -1 || wordsArr[i].y == -1) {
+    if(wordsArr[i].left == -1 || wordsArr[i].top == -1) {
       p.style.left = pp.x;
       p.style.top = pp.y;
     } else {
-      p.style.left = wordsArr[i].x;
-      p.style.top = wordsArr[i].y;
+      p.style.left = wordsArr[i].left;
+      p.style.top = wordsArr[i].top;
     }
 
     if( wordsArr[i].vertical == true ) {
       p.className += " vertical-text";
     }
-
-    if( wordsArr[i].size == 0 ) {
-      p.className += " normal-text";
-    } else {
-      p.className += wordsArr[i].size == -1?" small-text":" big-text";
-    }
+    p.style.fontSize = wordsArr[i].size;
 
     document.getElementById("fake_body").appendChild(p);
     
